@@ -1,0 +1,53 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: OwnSound
+    network: polygon-amoy
+    source:
+      address: "0xaD4b216C20Ac6a06D67d03c8176C047BB81CB7A0"
+      abi: OwnSound
+      startBlock: 10502129
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - CreatorPayoutWithdrawn
+        - FullRoyaltyBought
+        - NFTMinted
+        - NFTPurchased
+        - NFTRented
+        - RentInfoSet
+        - RoyaltyPaid
+        - Transfer
+      abis:
+        - name: OwnSound
+          file: ./abis/OwnSound.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: CreatorPayoutWithdrawn(indexed address,uint256)
+          handler: handleCreatorPayoutWithdrawn
+        - event: FullRoyaltyBought(indexed uint256,indexed address)
+          handler: handleFullRoyaltyBought
+        - event: NFTMinted(indexed uint256,indexed address)
+          handler: handleNFTMinted
+        - event: NFTPurchased(indexed uint256,indexed address)
+          handler: handleNFTPurchased
+        - event: NFTRented(indexed uint256,indexed address,uint256)
+          handler: handleNFTRented
+        - event: RentInfoSet(indexed uint256,uint256,uint256)
+          handler: handleRentInfoSet
+        - event: RoyaltyPaid(indexed uint256,indexed address,uint256)
+          handler: handleRoyaltyPaid
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/own-sound.ts
