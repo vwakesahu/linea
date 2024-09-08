@@ -9,16 +9,6 @@ OwnSound is a cutting-edge Web3 platform that's disrupting the music and audio c
 - 🌐 **Secondary Market**: Creators benefit from every resale and rental.
 - 🕵️ **Transparent Provenance**: Clear ownership history on the blockchain.
 
-## 🚀 Important Addresses and Transactions
-
-> **OwnSound Contract Address** (deployed on Polygon Amoy):  
-> `0xaD4b216C20Ac6a06D67d03c8176C047BB81CB7A0`
-
-> **Example NFT Buy Transaction**:  
-> [View on PolygonScan](https://amoy.polygonscan.com/tx/0xe693fd4c640c50c43aea77ba5c05e040063e533a1f9469739b908321baeeaada)
-
-> **musicXToken Address**:  
-> [View on PolygonScan](https://amoy.polygonscan.com/address/0x9b344Cc9f7Bfa905cc6eBCF87AbC03338785b70B)
 
 ## 🏗️ Platform Overview
 ![OwnSound Platform Overview](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgai_KERBSTIjhhugMvlWfo_v2SpRoQ2aWNxyB-xhzgQ93w1ulBJQtx2NDITQdy1XJt6Ql4UpZX-YQU9qE3BXDig9g1GRyiVpGWF494d94wDMxKdHmpx0NgLYnB_B9f6O2z99uMEm4oBvwzjY5bh1HILScLwHpkziqkopS672fAtn7_ulvlDrVjLidg9Co/s1600/Untitled.jpg)
